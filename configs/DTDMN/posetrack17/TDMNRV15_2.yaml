@@ -1,0 +1,51 @@
+_BASE_: "../Base_PoseTrack17.yaml"
+EXPERIMENT_NAME: 'TemporalDifferenceModeling'
+WORKERS: 3
+#PRINT_FREQ: 10
+GPUS: (1,)
+OUTPUT_DIR: './output/DTDMNRV15_2/'
+
+DISTANCE: 3
+
+CORE_FUNCTION: DifferenceFunctionMI1
+DATASET:
+  NAME: "PoseTrack_Difference"
+
+MODEL:
+  NAME: DTDMNRV15_2
+  PRETRAINED: './DcPose_supp_files/pretrained_models/out_model.pth'
+  BACKBONE_PRETRAINED: './DcPose_supp_files/pretrained_models/out_model.pth'
+LOSS:
+  HEATMAP_MSE:
+    USE: true
+    WEIGHT: 1.0
+
+TRAIN:
+  AUTO_RESUME: true
+  SAVE_MODEL_PER_EPOCH: 1
+  BATCH_SIZE_PER_GPU: 24
+  LR: 1e-3
+  END_EPOCH: 20
+  MILESTONES:
+    - 10
+    - 20
+    - 30
+    - 36
+  LR_STEP:
+    - 6
+    - 12
+    - 18
+    - 26
+VAL:
+  BATCH_SIZE_PER_GPU: 64
+  FLIP_VAL: true
+  COCO_BBOX_FILE: './DcPose_supp_files/posetrack17_precomputed_boxes/val_boxes.json'
+  MODEL_FILE: ''
+
+TEST:
+  BATCH_SIZE_PER_GPU: 64
+  MODEL_FILE: ''
+
+DEBUG:
+  VIS_SKELETON: true
+  VIS_BBOX: false
