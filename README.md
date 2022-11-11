@@ -3,8 +3,8 @@
 ## Visual Results
 
 <p align='center'>
-<img src="docs/reshape3.gif" alt="result" style="zoom:100%;" />
-<img src="docs/reshape4.gif" alt="result" style="zoom:100%;" />
+<img src="docs/reshape3.gif" alt="result" style="zoom:60%;" />
+<img src="docs/reshape4.gif" alt="result" style="zoom:60%;" />
 </p>
 
 <p align='center'>
