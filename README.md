@@ -8,17 +8,17 @@
 </p>
 
 <p align='center'>
-<img src="docs/reshape5.gif" alt="result" style="zoom:100%;" />
-<img src="docs/reshape6.gif" alt="result" style="zoom:100%;" /> 
+<img src="docs/reshape5.gif" alt="result" style="zoom:100%;" witdth="320" height="180" />
+<img src="docs/reshape6.gif" alt="result" style="zoom:100%;" witdth="320" height="180" /> 
 </p>
 
 <p align='center'>
-<img src="docs/reshape7.gif" alt="result" style="zoom:100%;" />
-<img src="docs/reshape8.gif" alt="result" style="zoom:100%;" />
+<img src="docs/reshape7.gif" alt="result" style="zoom:100%;" witdth="320" height="180" />
+<img src="docs/reshape8.gif" alt="result" style="zoom:100%;" witdth="320" height="180" />
 </p>
 
 <p align='center'>
-<img src="docs/reshape9.gif" alt="result" style="zoom:100%;" /> 
-<img src="docs/reshape11.gif" alt="result" style="zoom:100%;" />
+<img src="docs/reshape9.gif" alt="result" style="zoom:100%;" witdth="320" height="180" /> 
+<img src="docs/reshape11.gif" alt="result" style="zoom:100%;" witdth="320" height="180" />
 </p>
 
